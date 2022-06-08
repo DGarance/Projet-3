@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*header*/
+header {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+/*structure barre lieu*/
+.lieu {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    position: relative;
+
+    &_icone {
+        margin-right: 1%;
+    }
+
+    &_texte {
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+/*structure présentation du concept*/
+.concept {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fafafa;
+    padding: 2%;
+
+    &_titre {
+        margin: 0;
+    }
+
+    &_texte {
+        font-weight: 300;
+        margin: 1%;
+    }
+
+    &_bouton {
+        border: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        padding: 12px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 25px;
+        box-shadow: 1px 2px 10px #f3f3f3;
+    }
+}
+
+
+/*fonctionnement du site*/
+.tuto {
+    padding: 1%;
+
+    &_titre {
+        margin-top: 0;
+    }
+
+    &_steps {
+        margin: 0;
+        padding: 0;
+    }
+
+    &_step {
+
+        padding: 12px;
+        border-radius: 10px;
+        background-color: #f6f6f6;
+        margin: 1%;
+        border: 1px solid #f6f6f6;
+    }
+}
+
+
+/*structure présentation des restaurants*/
+.restaurants {
+    background-color: #f6f6f6;
+    padding: 1%;
+}
+
+.cartes {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+
+.carte {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    display: block;
+    border: 1px solid;
+    border-radius: 17px;
+
+    &_img {
+        height: 200px;
+        border: 1px solid transparent;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #353535;
+}
