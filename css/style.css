@@ -12,6 +12,11 @@ header {
   height: 50px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /*structure barre lieu*/
 .lieu {
   display: flex;
@@ -88,22 +93,36 @@ header {
 .carte {
   width: 100%;
   background-color: white;
-  position: relative;
-  display: block;
   border: 1px solid;
   border-radius: 17px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  margin-bottom: 20px;
 }
 .carte_img {
   height: 200px;
   border: 1px solid transparent;
   object-fit: cover;
   width: 100%;
+  border-radius: 17px 17px 0px 0px;
+}
+.carte_icone {
+  display: flex;
+  flex-direction: row;
 }
 
-footer {
+.footer {
   background-color: #353535;
 }
-footerlogo_footer {
+.footer_logo {
+  font-size: 20px;
+  color: white;
+  font-family: "Shrikhand";
+}
+.footer_liste {
+  list-style: none;
+  margin-right: 3%;
+}
+.footer_info {
   color: white;
 }
 

@@ -1,0 +1,138 @@
+/*structure page d'accueil*/
+
+.lieu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    padding: 10px;
+    position: relative;
+
+    &__icone {
+        margin-right: 1%;
+    }
+
+    &__ville {
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+.concept {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fafafa;
+
+    &__titre {
+        margin: 0;
+    }
+
+    &__texte {
+        font-weight: 300;
+        margin: 1%;
+    }
+
+    &__bouton {
+        background: linear-gradient($couleur-primaire, $couleur-secondaire);
+        padding: 12px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 25px;
+
+    }
+
+}
+
+.tuto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &__titre {
+        margin-top: 0;
+    }
+
+    &__steps {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    &__step {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #f6f6f6;
+        margin: 1%;
+        border: 1px solid;
+    }
+
+    &__chiffre {
+        background-color: $couleur-primaire;
+        margin-right: 4%;
+        border-radius: 20px;
+        padding: 1px 2px 3px 5px;
+        width: 3%;
+        right: 1%;
+    }
+
+    &__icon {
+        margin-right: 4%;
+    }
+
+    &__texte {
+        margin-left: 1%;
+    }
+}
+
+.restaurants {
+    display: flex;
+    flex-flow: row;
+    flex-direction: column;
+
+    &__titre {
+        font-size: 20px
+    }
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: row;
+
+    &__cartes {
+        height: 250px;
+        display: inline;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+    &__carte {
+        width: 100%;
+    }
+
+    &__nouveau {
+        display: flex;
+        width: 80px;
+        position: absolute;
+        border-radius: 2px;
+        background-color: #99E2D0;
+        font-size: 15px;
+        font-weight: 500;
+        color: #278870;
+    }
+
+    &__img {
+        height: 175px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
