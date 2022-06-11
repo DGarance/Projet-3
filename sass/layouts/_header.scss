@@ -2,9 +2,23 @@
 
 header {
     display: flex;
+    width: 100%;
     justify-content: center;
-    height: 62px;
-    position: relative;
+    height: 25px;
     background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*body*/
+
+body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
