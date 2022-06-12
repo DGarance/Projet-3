@@ -1,0 +1,75 @@
+.img__restaurants {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    background-color: $wild-sand;
+    border-radius: 30px;
+    position: relative;
+    margin-top: -18%;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    &__header-titre {
+        font-size: 28px;
+        font-family: 'Shrikhand', sans-serif;
+
+
+    }
+
+    &__header-heart {
+        font-size: 35px;
+        font-weight: normal;
+    }
+
+    &__elements {
+        padding: 15px;
+    }
+
+    &__titre {
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    &__plats {
+        background-color: $white;
+        width: 100%;
+        border-radius: 17px;
+        margin-top: 20px;
+    }
+
+    &__elements {
+        margin: 0%;
+    }
+
+    &__plats-noms {
+        padding-top: 10px;
+        margin: 0%;
+    }
+
+    &__plats-accompagnements {
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+    &__prix {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0px;
+    }
+
+    &__bouton-conteneur {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

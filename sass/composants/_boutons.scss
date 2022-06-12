@@ -6,3 +6,11 @@
     color: #fff;
     background: linear-gradient($couleur-secondaire, $couleur-primaire);
 }
+
+.menu__bouton {
+    border: 0;
+    border-radius: 100px;
+    padding: 12px;
+    color: $white;
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+}

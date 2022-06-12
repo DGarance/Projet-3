@@ -4,16 +4,28 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 25px;
-    background-color: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: white;
+}
+
+/*header pages restaurants*/
+
+.header {
+    font-family: 'Shrikhand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__fleche-retour {
+        position: absolute;
+        left: 25px;
+        font-size: 25px;
+    }
 }
 
 /*body*/
 
 body {
-    margin: 0;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
     width: 100%;
 }
