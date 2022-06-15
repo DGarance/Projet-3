@@ -1,64 +1,91 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
-/*header*/
+/* Palette couleurs */
+/*Header page d'acceuil*/
 header {
   display: flex;
-  width: 100%;
   justify-content: center;
-  background-color: white;
+  background-color: #ffffff;
+  width: 100%;
 }
 
-/*header pages restaurants*/
+/*Header pages restaurants*/
 .header {
   font-family: "Shrikhand", sans-serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .header__fleche-retour {
   position: absolute;
   left: 25px;
   font-size: 25px;
+  font-weight: bolder;
 }
 
-/*body*/
+/*Body*/
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
   width: 100%;
 }
 
+/*Décoration liens*/
 a {
   text-decoration: none;
   color: black;
 }
 
-/* Palette couleurs */
-/*structure page d'accueil*/
+/*Footer*/
+.footer {
+  background-color: #353535;
+  height: 150px;
+}
+.footer__titre {
+  font-family: "Shrikhand";
+  font-weight: 100;
+  color: #ffffff;
+  padding: 20px 0 0 10px;
+}
+.footer__liste {
+  list-style: none;
+  color: #ffffff;
+  padding-inline-start: inherit;
+  padding-left: 10px;
+}
+.footer__liste-info {
+  color: #ffffff;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+/*Structure page d'accueil*/
 .lieu {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #eaeaea;
+  align-items: center;
+  box-shadow: inset 0px 3px 5px 0px #7e7e7e;
 }
 .lieu__icone {
   margin-right: 20px;
   color: #353535;
 }
 .lieu__ville {
-  font-weight: bold;
-  font-size: large;
   color: #353535;
+  font-size: large;
+  font-weight: bold;
 }
 
 .concept {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   text-align: center;
   background-color: #f6f6f6;
 }
 .concept__conteneur {
-  margin: 15px;
+  padding: 25px 40px 40px 40px;
 }
 .concept__titre {
   font-size: 25px;
@@ -66,48 +93,42 @@ a {
 }
 .concept__texte {
   font-size: 15px;
-  color: #353535;
 }
 
 .tuto__conteneur {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.tuto {
-  display: block;
-  width: 100%;
-  margin-right: 20px;
-}
 .tuto__titre {
-  margin: 20px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bolder;
+  margin: 20px;
 }
 .tuto__step {
   display: flex;
+  justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  background-color: #f6f6f6;
+  border-radius: 20px;
   margin: 15px;
+  padding: 10px;
+  background-color: #f6f6f6;
   box-shadow: 3px 3px 5px #7e7e7e;
 }
 .tuto__chiffre {
   background-color: #9356DC;
   color: #ffffff;
   padding: 3px 8px 3px 8px;
-  border-radius: 100px;
+  border-radius: 20px;
   position: absolute;
-  left: 5px;
+  left: 10px;
 }
 .tuto__icon {
-  margin-left: 40px;
+  margin-right: 40px;
   color: #7e7e7e;
 }
 .tuto__texte {
-  margin-left: 20px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -118,25 +139,22 @@ a {
 
 .restaurant__cartes {
   width: 100%;
-  padding: 3px;
   margin-top: 15px;
 }
 .restaurant__carte {
   width: 100%;
   height: 220px;
   background-color: #ffffff;
-  border-radius: 17px;
+  border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
 }
 .restaurant__nouveau {
-  display: flex;
   background-color: #99e2d0;
-  width: auto;
-  position: absolute;
-  right: 30px;
   color: #008766;
+  position: absolute;
   padding: 5px;
   margin-top: 15px;
+  right: 35px;
   font-size: small;
   font-weight: bold;
 }
@@ -144,53 +162,126 @@ a {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  border-radius: 17px 17px 0px 0px;
+  border-radius: 17px 17px 0 0;
 }
 .restaurant__bloc-nom {
-  margin: 1%;
+  margin: 0%;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 15px;
   font-weight: bold;
-  font-size: 17px;
 }
 .restaurant__bloc-lieu {
-  margin: 0;
+  padding-left: 10px;
+  margin-top: 5px;
 }
 .restaurant__bloc-coeur {
-  display: flex;
   position: absolute;
-  right: 20px;
+  right: 100px;
+  margin: -15%;
+  font-size: larger;
 }
 
-.footer {
-  background-color: #353535;
+/*Structure pages Restaurants*/
+/*Image*/
+.img__restaurants {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
 }
-.footer__titre {
+
+/*Menu*/
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  position: relative;
+  margin-top: -18%;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.menu__header-titre {
+  font-size: 25px;
+  font-weight: bolder;
   font-family: "Shrikhand", sans-serif;
-  color: #ffffff;
+}
+.menu__header-heart {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.menu__elements {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu__titre {
+  text-transform: uppercase;
+}
+.menu__plats {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px #e6e6e6;
   margin-top: 20px;
+  width: 100%;
 }
-.footer__liste {
-  list-style: none;
-  color: #ffffff;
+.menu__plats-noms {
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0%;
 }
-.footer__liste-info {
+.menu__plats-accompagnements {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0%;
+}
+.menu__prix {
+  position: absolute;
+  right: 40px;
+  margin: -5%;
+  font-weight: bold;
+}
+.menu__box {
+  background-color: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 5%;
+  left: 22rem;
+  margin: -15%;
+  padding: 15px;
+}
+.menu__validation {
   color: #ffffff;
 }
 
-/*bouton pages*/
+/*Boutons*/
 .concept__bouton {
   border: 0;
-  border-radius: 100px;
   padding: 12px;
-  color: #fff;
+  color: #ffffff;
+  border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
 }
 
 .menu__bouton {
   border: 0;
-  border-radius: 100px;
   padding: 12px;
   color: #ffffff;
+  border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+}
+.menu__bouton--conteneur {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

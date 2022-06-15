@@ -1,0 +1,55 @@
+/*Header page d'acceuil*/
+header {
+    @include display;
+    background-color: $white;
+    width:100%;
+}
+
+/*Header pages restaurants*/
+.header{
+    font-family: 'Shrikhand', sans-serif;
+    @include display;
+    align-items: center;
+    &__fleche-retour{
+        position: absolute;
+        left:25px;
+        @include titre
+    }
+}
+
+/*Body*/
+body{
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+/*Décoration liens*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: $mine-shaft;
+    height:150px;
+    &__titre{
+        font-family: 'Shrikhand';
+        font-weight:100;
+        color: $white;
+        padding: 20px 0 0 10px;
+    }
+    &__liste{
+        list-style: none;
+        color: $white;
+        padding-inline-start: inherit;
+        padding-left: 10px;
+    }
+    &__liste-info{
+        color: $white;
+        padding-top: 10px;
+        font-weight:400;
+
+    }
+}

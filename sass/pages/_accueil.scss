@@ -1,10 +1,9 @@
-/*structure page d'accueil*/
-
+/*Structure page d'accueil*/
 .lieu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display;
     background-color: $mercury;
+    align-items: center;
+    box-shadow: inset 0px 3px 5px 0px $gray;
 
     &__icone {
         margin-right: 20px;
@@ -12,79 +11,69 @@
     }
 
     &__ville {
-        font-weight: bold;
-        font-size: large;
         color: $mine-shaft;
+        font-size: large;
+        font-weight: bold;
     }
 }
 
 .concept {
-    display: flex;
-    flex-direction: column;
+    @include display;
     text-align: center;
     background-color: $wild-sand;
 
     &__conteneur {
-        margin: 15px;
-
+        padding: 25px 40px 40px 40px;
     }
 
     &__titre {
-        font-size: 25px;
-        font-weight: bolder;
+        @include titre;
     }
 
     &__texte {
-        font-size: 15px;
-        color: $mine-shaft;
+        font-size: 15px
     }
-
 }
 
 .tuto__conteneur {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .tuto {
-    display: block;
-    width: 100%;
-    margin-right: 20px;
-
     &__titre {
+        @include titre;
         margin: 20px;
-        font-size: 20px;
-        font-weight: bolder;
     }
 
     &__step {
-        display: flex;
+        @include display;
         align-items: center;
-        border-radius: 15px;
-        background-color: $wild-sand;
+        @include border-radius;
         margin: 15px;
+        padding: 10px;
+        background-color: $wild-sand;
         box-shadow: 3px 3px 5px $gray;
     }
 
     &__chiffre {
-        background-color: $couleur-primaire ;
+        background-color: $couleur-primaire;
         color: $white;
         padding: 3px 8px 3px 8px;
-        border-radius: 100px;
+        @include border-radius;
         position: absolute;
-        left: 5px;
+        left: 10px;
     }
 
     &__icon {
-        margin-left: 40px;
+        margin-right: 40px;
         color: $gray;
     }
 
     &__texte {
-        margin-left: 20px;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: bold;
+
     }
 }
 
@@ -94,75 +83,49 @@
 }
 
 .restaurant {
-    &__cartes {
+    &__cartes{
         width: 100%;
-        padding: 3px;
         margin-top: 15px;
     }
-
-    &__carte {
-        width: 100%;
+    &__carte{
+        width:100%;
         height: 220px;
         background-color: $white;
-        border-radius: 17px;
+        @include border-radius;
         box-shadow: 4px 4px 6px #e6e6e6;
     }
-
     &__nouveau {
-        display: flex;
         background-color: $morning-glory;
-        width: auto;
-        position: absolute;
-        right: 30px;
         color: $deep-sea;
+        position:absolute;
         padding: 5px;
         margin-top: 15px;
+        right:35px;
         font-size: small;
-        font-weight: bold;
-    }
+        font-weight:bold;
 
-    &__img {
+    }
+    &__img{
         width: 100%;
         height: 150px;
         object-fit: cover;
-        border-radius: 17px 17px 0px 0px;
+        border-radius: 17px 17px 0 0;
     }
-
-    &__bloc-nom {
-        margin: 1%;
+    &__bloc-nom{
+        margin: 0%;
+        margin-top: 10px;
+        padding-left: 10px;
+        font-size:15px;
         font-weight: bold;
-        font-size: 17px;
     }
-
-    &__bloc-lieu {
-        margin: 0;
+    &__bloc-lieu{
+        padding-left: 10px;
+        margin-top: 5px;
     }
-
-    &__bloc-coeur {
-        display: flex;
+    &__bloc-coeur{
         position: absolute;
-        right: 20px;
+        right:100px;
+        margin: -15%;
+        font-size: larger;
     }
-
-}
-
-
-.footer {
-    background-color: $mine-shaft ;
-
-    &__titre {
-        font-family: 'Shrikhand', sans-serif;
-        color: $white;
-        margin-top: 20px;
-    }
-
-    &__liste {
-        list-style: none;
-        color: $white;
-    }
-
-    &__liste-info {
-        color: $white;
-    }
-
 }

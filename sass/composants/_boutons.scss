@@ -1,16 +1,22 @@
-/*bouton pages*/
+/*Boutons*/
 .concept__bouton {
     border: 0;
-    border-radius: 100px;
     padding: 12px;
-    color: #fff;
+    color: $white;
+    border-radius: 100px;
     background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    cursor: pointer;
 }
 
 .menu__bouton {
     border: 0;
-    border-radius: 100px;
     padding: 12px;
     color: $white;
+    border-radius: 100px;
     background: linear-gradient($couleur-secondaire, $couleur-primaire);
+    cursor: pointer;
+
+    &--conteneur {
+        @include display;
+    }
 }

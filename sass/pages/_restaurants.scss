@@ -1,12 +1,16 @@
+/*Structure pages Restaurants*/
+
+/*Image*/
 .img__restaurants {
     height: 280px;
     width: 100%;
     object-fit: cover;
 }
 
+/*Menu*/
 .menu {
     background-color: $wild-sand;
-    border-radius: 30px;
+    @include border-radius;
     position: relative;
     margin-top: -18%;
 
@@ -18,58 +22,62 @@
         padding-right: 20px;
     }
 
-
     &__header-titre {
-        font-size: 28px;
+        @include titre;
         font-family: 'Shrikhand', sans-serif;
-
-
     }
 
     &__header-heart {
-        font-size: 35px;
-        font-weight: normal;
+        @include titre;
     }
 
     &__elements {
-        padding: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     &__titre {
         text-transform: uppercase;
-        text-decoration: underline;
     }
 
     &__plats {
         background-color: $white;
-        width: 100%;
-        border-radius: 17px;
+        @include border-radius;
+        @include box-shadow;
         margin-top: 20px;
+        width: 100%;
     }
-
-    &__elements {
+    &__plats-noms{
+        @include sous-titre;
+        padding-top: 10px;
+        padding-left: 10px;
         margin: 0%;
     }
-
-    &__plats-noms {
+    &__plats-accompagnements{
+        @include texte;
         padding-top: 10px;
+        padding-left: 10px;
         margin: 0%;
     }
-
-    &__plats-accompagnements {
-        padding-top: 10px;
-        margin: 0px;
+    &__prix{
+        position: absolute;
+        right:40px;
+        margin: -5%;
+        font-weight: bold;
     }
-
-    &__prix {
-        display: flex;
-        justify-content: flex-end;
-        margin: 0px;
+    &__box{
+        background-color: $morning-glory;
+        @include display;
+        align-items:center;
+        position:absolute;
+        width:5%;
+        left:22rem;
+        margin:-15%;
+        padding: 15px;
     }
-
-    &__bouton-conteneur {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &__validation{
+        color:$white;
     }
+    
+
 }
