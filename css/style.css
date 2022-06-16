@@ -176,10 +176,11 @@ a {
   margin-top: 5px;
 }
 .restaurant__bloc-coeur {
-  position: absolute;
-  right: 100px;
-  margin: -15%;
-  font-size: larger;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 50px;
+  right: 20px;
 }
 
 /*Structure pages Restaurants*/
