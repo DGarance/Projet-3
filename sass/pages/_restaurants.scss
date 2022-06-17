@@ -47,37 +47,58 @@
         margin-top: 20px;
         width: 100%;
     }
-    &__plats-noms{
+
+    &__plats-delay1 {
+        animation: menu 1s ease-out;
+    }
+
+    &__plats-delay2 {
+        animation: menu 2s ease-out;
+    }
+
+    &__plats-delay3 {
+        animation: menu 3s ease-out;
+    }
+
+    &__plats-delay4 {
+        animation: menu 4s ease-out;
+    }
+
+    &__plats-noms {
         @include sous-titre;
         padding-top: 10px;
         padding-left: 10px;
         margin: 0%;
     }
-    &__plats-accompagnements{
+
+    &__plats-accompagnements {
         @include texte;
         padding-top: 10px;
         padding-left: 10px;
         margin: 0%;
     }
-    &__prix{
+
+    &__prix {
         position: absolute;
-        right:40px;
+        right: 40px;
         margin: -5%;
         font-weight: bold;
     }
-    &__box{
+
+    &__box {
         background-color: $morning-glory;
         @include display;
-        align-items:center;
-        position:absolute;
-        width:5%;
-        left:22rem;
-        margin:-15%;
+        align-items: center;
+        position: absolute;
+        width: 5%;
+        left: 22rem;
+        margin: -15%;
         padding: 15px;
     }
-    &__validation{
-        color:$white;
+
+    &__validation {
+        color: $white;
     }
-    
+
 
 }

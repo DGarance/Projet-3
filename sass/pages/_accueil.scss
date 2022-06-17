@@ -80,6 +80,9 @@
 .restaurants {
     background-color: $wild-sand;
     padding: 20px;
+    &__cartes{
+        margin-top: 20px;
+    }
 }
 
 .restaurant {

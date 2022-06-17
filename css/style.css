@@ -2,6 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 /* Palette couleurs */
+/*animations d'aparrition menu*/
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 /*Header page d'acceuil*/
 header {
   display: flex;
@@ -136,6 +147,9 @@ a {
   background-color: #f6f6f6;
   padding: 20px;
 }
+.restaurants__cartes {
+  margin-top: 20px;
+}
 
 .restaurant__cartes {
   width: 100%;
@@ -228,6 +242,18 @@ a {
   margin-top: 20px;
   width: 100%;
 }
+.menu__plats-delay1 {
+  animation: menu 1s ease-out;
+}
+.menu__plats-delay2 {
+  animation: menu 2s ease-out;
+}
+.menu__plats-delay3 {
+  animation: menu 3s ease-out;
+}
+.menu__plats-delay4 {
+  animation: menu 4s ease-out;
+}
 .menu__plats-noms {
   font-size: 17px;
   font-weight: bold;
@@ -283,6 +309,39 @@ a {
 .menu__bouton--conteneur {
   display: flex;
   justify-content: center;
+}
+
+/*Bouton like*/
+.restaurant__coeur {
+  background-color: #ffffff;
+}
+.restaurant__coeur::before {
+  content: "\f004";
+  font-weight: lighter;
+  transition: color 1s ease-out;
+  color: black;
+}
+.restaurant__coeur:hover::before {
+  color: #FF79DA;
+  cursor: pointer;
+  background: #ffffff;
+  font-weight: bold;
+}
+
+.menu__coeur {
+  background-color: #f6f6f6;
+}
+.menu__coeur::before {
+  content: "\f004";
+  font-weight: lighter;
+  transition: color 1s ease-out;
+  color: black;
+}
+.menu__coeur:hover::before {
+  color: #FF79DA;
+  cursor: pointer;
+  background: #f6f6f6;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

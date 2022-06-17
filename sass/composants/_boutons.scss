@@ -20,3 +20,45 @@
         @include display;
     }
 }
+
+/*Bouton like*/
+.restaurant{
+
+    &__coeur {
+        background-color: $white;
+    }
+
+    &__coeur::before {
+        content: "\f004";
+        font-weight: lighter;
+        transition: color 1s ease-out;
+        color: black;
+    }
+
+    &__coeur:hover::before {
+        color: $couleur-secondaire;
+        cursor: pointer;
+        background: $white;
+        font-weight: bold;
+    }
+}
+
+.menu{
+    &__coeur {
+            background-color: $wild-sand;
+        }
+    
+        &__coeur::before {
+            content: "\f004";
+            font-weight: lighter;
+            transition: color 1s ease-out;
+            color: black;
+        }
+    
+        &__coeur:hover::before {
+            color: $couleur-secondaire;
+            cursor: pointer;
+            background: $wild-sand;
+            font-weight: bold;
+        }
+}
