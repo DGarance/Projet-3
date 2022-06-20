@@ -208,9 +208,9 @@ a {
 /*Menu*/
 .menu {
   background-color: #f6f6f6;
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
-  margin-top: -18%;
+  margin-top: -30px;
 }
 .menu__header {
   display: flex;
@@ -236,17 +236,27 @@ a {
   text-transform: uppercase;
 }
 .menu__plats {
+  animation: menu 1s ease-out;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
-  margin-top: 20px;
   width: 100%;
 }
 .menu__plats-delay1 {
   animation: menu 1s ease-out;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  width: 100%;
 }
 .menu__plats-delay2 {
   animation: menu 2s ease-out;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  width: 100%;
 }
 .menu__plats-delay3 {
   animation: menu 3s ease-out;
@@ -268,9 +278,6 @@ a {
   margin: 0%;
 }
 .menu__prix {
-  position: absolute;
-  right: 40px;
-  margin: -5%;
   font-weight: bold;
 }
 .menu__box {
@@ -278,13 +285,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   width: 5%;
-  left: 22rem;
-  margin: -15%;
   padding: 15px;
 }
-.menu__validation {
+.menu__box .fa-circle-check {
   color: #ffffff;
 }
 
