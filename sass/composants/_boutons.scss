@@ -1,31 +1,49 @@
 /*Boutons*/
 .concept__bouton {
-    border: 0;
-    padding: 12px;
-    color: $white;
-    border-radius: 100px;
-    background: linear-gradient($couleur-secondaire, $couleur-primaire);
-    cursor: pointer;
+    @include bouton;
 }
 
 .menu__bouton {
-    border: 0;
-    padding: 12px;
-    color: $white;
-    border-radius: 100px;
-    background: linear-gradient($couleur-secondaire, $couleur-primaire);
-    cursor: pointer;
+   @include bouton;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
-    &--conteneur {
+    &-conteneur {
         @include display;
+        align-items: center;
+        
     }
 }
 
 /*Bouton like*/
-.restaurant{
+.restaurant {
 
     &__coeur {
         background-color: $white;
+    }
+
+    &__coeur::before {
+        content: "\f004";
+        font-weight: lighter;
+        transition: color 1s ease-out;
+        color: black;
+        background-color: transparent;
+    }
+
+    &__coeur:hover::before {
+        color: $couleur-secondaire;
+        cursor: pointer;
+        font-weight: bold;
+        background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+}
+
+.menu {
+    &__coeur {
+        background-color: $wild-sand;
     }
 
     &__coeur::before {
@@ -38,27 +56,10 @@
     &__coeur:hover::before {
         color: $couleur-secondaire;
         cursor: pointer;
-        background: $white;
+        background: $wild-sand;
         font-weight: bold;
+        background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-}
-
-.menu{
-    &__coeur {
-            background-color: $wild-sand;
-        }
-    
-        &__coeur::before {
-            content: "\f004";
-            font-weight: lighter;
-            transition: color 1s ease-out;
-            color: black;
-        }
-    
-        &__coeur:hover::before {
-            color: $couleur-secondaire;
-            cursor: pointer;
-            background: $wild-sand;
-            font-weight: bold;
-        }
 }

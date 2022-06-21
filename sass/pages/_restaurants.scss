@@ -41,38 +41,40 @@
         text-transform: uppercase;
     }
 
-    &__plats {
-        animation: menu 1s ease-out;
-        background-color: $white;
-        @include border-radius;
-        @include box-shadow;
-        width: 100%;
-    }
-
-    &__plats-delay1 {
-        animation: menu 1s ease-out;
+    &__plats1 {
+        margin-top: 10px;
         display: flex;
         background-color: $white;
         @include border-radius;
         @include box-shadow;
-        width: 100%;
+        animation: menu 0.5s ease-in
     }
 
-    &__plats-delay2 {
-        animation: menu 2s ease-out;
+    &__plats2 {
+        margin-top: 10px;
         display: flex;
         background-color: $white;
         @include border-radius;
         @include box-shadow;
-        width: 100%;
+        animation: menu 1s ease-in
     }
 
-    &__plats-delay3 {
-        animation: menu 3s ease-out;
+    &__plats3 {
+        margin-top: 10px;
+        display: flex;
+        background-color: $white;
+        @include border-radius;
+        @include box-shadow;
+        animation: menu 1.5s ease-in
     }
 
-    &__plats-delay4 {
-        animation: menu 4s ease-out;
+    &__plats4 {
+        margin-top: 10px;
+        display: flex;
+        background-color: $white;
+        @include border-radius;
+        @include box-shadow;
+        animation: menu 2s ease-in
     }
 
     &__plats-noms {
@@ -84,22 +86,26 @@
 
     &__plats-accompagnements {
         @include texte;
-        padding-top: 10px;
-        padding-left: 10px;
+        padding: 10px;
         margin: 0%;
     }
 
     &__prix {
+        margin-left: auto;
         font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
     }
 
     &__box {
-        background-color: #99e2d0;
+        background-color: $couleur-tertiaire;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 5%;
         padding: 15px;
+        border-radius: 0 20px 20px 0;
 
         .fa-circle-check {
             color: $white;

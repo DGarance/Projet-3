@@ -2,6 +2,15 @@
     border-radius: 20px;
 }
 
+@mixin bouton {
+    cursor: pointer;
+    border: 0;
+    padding: 15px;
+    color: $white;
+    border-radius: 100px;
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+}
+
 @mixin background-color {
     background-color: $mine-shaft;
 }
@@ -15,13 +24,16 @@
     font-size: 25px;
     font-weight: bolder;
 }
+
 @mixin box-shadow {
-box-shadow: 4px 4px 6px #e6e6e6
+    box-shadow: 4px 4px 6px #e6e6e6
 }
+
 @mixin sous-titre {
-    font-size:17px;
-    font-weight:bold;
+    font-size: 17px;
+    font-weight: bold;
 }
-@mixin texte{
-    font-size:14px;
+
+@mixin texte {
+    font-size: 14px;
 }
