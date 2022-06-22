@@ -9,10 +9,13 @@
 
 /*Menu*/
 .menu {
-    background-color: $wild-sand;
-    border-radius: 30px;
-    position: relative;
-    margin-top: -30px;
+    &__conteneur {
+        background-color: $wild-sand;
+        border-radius: 30px;
+        position: relative;
+        margin-top: -30px;
+    }
+
 
 
     &__header {
@@ -47,7 +50,15 @@
         background-color: $white;
         @include border-radius;
         @include box-shadow;
-        animation: menu 0.5s ease-in
+        animation: menu 0.5s ease-in;
+
+        &:hover .menu__box {
+            width: 70px;
+        }
+
+        &:hover .menu__box>.fa-circle-check {
+            transform: rotate(0deg);
+        }
     }
 
     &__plats2 {
@@ -56,7 +67,15 @@
         background-color: $white;
         @include border-radius;
         @include box-shadow;
-        animation: menu 1s ease-in
+        animation: menu 1s ease-in;
+
+        &:hover .menu__box {
+            width: 70px;
+        }
+
+        &:hover .menu__box>.fa-circle-check {
+            transform: rotate(0deg);
+        }
     }
 
     &__plats3 {
@@ -65,16 +84,39 @@
         background-color: $white;
         @include border-radius;
         @include box-shadow;
-        animation: menu 1.5s ease-in
+        animation: menu 1.5s ease-in;
+
+        &:hover .menu__box {
+            width: 70px;
+        }
+
+        &:hover .menu__box>.fa-circle-check {
+            transform: rotate(0deg);
+        }
     }
 
     &__plats4 {
         margin-top: 10px;
         display: flex;
         background-color: $white;
+
         @include border-radius;
         @include box-shadow;
-        animation: menu 2s ease-in
+        animation: menu 2s ease-in;
+
+        &:hover .menu__box {
+            width: 70px;
+        }
+
+        &:hover .menu__box>.fa-circle-check {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__plats-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     &__plats-noms {
@@ -96,19 +138,26 @@
         display: flex;
         align-items: flex-end;
         margin-bottom: 20px;
+        padding-right: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
     }
 
     &__box {
         background-color: $couleur-tertiaire;
-        display: flex;
-        justify-content: center;
+        @include display;
         align-items: center;
-        width: 5%;
-        padding: 15px;
+        width: 0;
         border-radius: 0 20px 20px 0;
+        overflow: hidden;
+        transition: width 1s;
 
         .fa-circle-check {
             color: $white;
+            transform: rotate(360deg);
+            transition: transform 500ms;
         }
     }
 

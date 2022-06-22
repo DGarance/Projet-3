@@ -126,6 +126,11 @@ a {
   background-color: #f6f6f6;
   box-shadow: 3px 3px 5px #7e7e7e;
 }
+.tuto__step:hover {
+  opacity: 0.8;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
 .tuto__chiffre {
   background-color: #9356DC;
   color: #ffffff;
@@ -206,7 +211,7 @@ a {
 }
 
 /*Menu*/
-.menu {
+.menu__conteneur {
   background-color: #f6f6f6;
   border-radius: 30px;
   position: relative;
@@ -243,6 +248,12 @@ a {
   box-shadow: 4px 4px 6px #e6e6e6;
   animation: menu 0.5s ease-in;
 }
+.menu__plats1:hover .menu__box {
+  width: 70px;
+}
+.menu__plats1:hover .menu__box > .fa-circle-check {
+  transform: rotate(0deg);
+}
 .menu__plats2 {
   margin-top: 10px;
   display: flex;
@@ -250,6 +261,12 @@ a {
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
   animation: menu 1s ease-in;
+}
+.menu__plats2:hover .menu__box {
+  width: 70px;
+}
+.menu__plats2:hover .menu__box > .fa-circle-check {
+  transform: rotate(0deg);
 }
 .menu__plats3 {
   margin-top: 10px;
@@ -259,6 +276,12 @@ a {
   box-shadow: 4px 4px 6px #e6e6e6;
   animation: menu 1.5s ease-in;
 }
+.menu__plats3:hover .menu__box {
+  width: 70px;
+}
+.menu__plats3:hover .menu__box > .fa-circle-check {
+  transform: rotate(0deg);
+}
 .menu__plats4 {
   margin-top: 10px;
   display: flex;
@@ -266,6 +289,17 @@ a {
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
   animation: menu 2s ease-in;
+}
+.menu__plats4:hover .menu__box {
+  width: 70px;
+}
+.menu__plats4:hover .menu__box > .fa-circle-check {
+  transform: rotate(0deg);
+}
+.menu__plats-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__plats-noms {
   font-size: 17px;
@@ -285,18 +319,25 @@ a {
   display: flex;
   align-items: flex-end;
   margin-bottom: 20px;
+  padding-right: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__box {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5%;
-  padding: 15px;
+  width: 0;
   border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  transition: width 1s;
 }
 .menu__box .fa-circle-check {
   color: #ffffff;
+  transform: rotate(360deg);
+  transition: transform 500ms;
 }
 
 /*Boutons*/
@@ -307,6 +348,10 @@ a {
   color: #ffffff;
   border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
+}
+.concept__bouton:hover {
+  box-shadow: 4px 4px 6px #e6e6e6;
+  transform: scale(0.95);
 }
 
 .menu__bouton {
@@ -323,6 +368,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu__bouton:hover {
+  box-shadow: 4px 4px 6px #e6e6e6;
+  transform: scale(0.95);
 }
 
 /*Bouton like*/
@@ -364,11 +413,9 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-@media all and (min-width: 760px) {
+@media screen and (min-width: 760px) {
   body {
-    width: auto;
-    margin: 0;
-    padding: 0;
+    width: 100%;
   }
 
   .tuto__titre {
@@ -390,6 +437,18 @@ a {
   }
   .tuto__icon {
     margin: 20px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .menu__header {
+    display: flex;
+    justify-content: center;
+  }
+  .menu__header-heart {
+    margin-left: 3%;
   }
 
   .restaurants__titre {

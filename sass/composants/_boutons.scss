@@ -1,6 +1,11 @@
 /*Boutons*/
 .concept__bouton {
     @include bouton;
+
+    &:hover{
+        @include box-shadow;
+        transform: scale(.95)
+    }
 }
 
 .menu__bouton {
@@ -12,6 +17,11 @@
         @include display;
         align-items: center;
         
+    }
+
+    &:hover{
+        @include box-shadow;
+        transform: scale(.95);
     }
 }
 

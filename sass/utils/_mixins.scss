@@ -1,7 +1,9 @@
 @mixin border-radius {
     border-radius: 20px;
 }
-
+@mixin gradient-color{
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+}
 @mixin bouton {
     cursor: pointer;
     border: 0;
@@ -37,3 +39,4 @@
 @mixin texte {
     font-size: 14px;
 }
+
