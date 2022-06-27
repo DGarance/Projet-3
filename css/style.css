@@ -13,6 +13,80 @@
     transform: translateX(0px);
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes apparition {
+  to {
+    opacity: 0;
+    transform: translateX(0px);
+    z-index: -1;
+  }
+}
+/*Loader*/
+.loader {
+  font-size: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: block;
+}
+.loader__conteneur {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.9;
+  animation: apparition 6s forwards;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+.loader__titre {
+  font-family: "Shrikhand";
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.loader-circles {
+  border-radius: 100%;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  opacity: 1;
+  animation: spin 1s linear infinite;
+}
+
+.loader-circles::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 100%;
+  border: 6px solid transparent;
+  border-top-color: #FF79DA;
+  opacity: 0.8;
+  animation: spin linear 2s infinite;
+}
+
+.loader-circles::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border-radius: 100%;
+  border: 6px solid transparent;
+  border-top-color: #99E2D0;
+  opacity: 0.8;
+  animation: spin linear 3s infinite;
+}
+
 /*Header page d'acceuil*/
 header {
   display: flex;
