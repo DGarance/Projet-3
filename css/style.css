@@ -55,6 +55,10 @@
   display: flex;
   justify-content: center;
   position: absolute;
+  background: linear-gradient(#99E2D0, #9356DC, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .loader-circles {
@@ -313,6 +317,16 @@ a {
 }
 .menu__titre {
   text-transform: uppercase;
+  position: relative;
+}
+.menu__titre::after {
+  content: "";
+  width: 10%;
+  height: 4px;
+  left: 0%;
+  top: 22px;
+  position: absolute;
+  background-color: #99E2D0;
 }
 .menu__plats1 {
   margin-top: 10px;
@@ -386,6 +400,8 @@ a {
   font-size: 14px;
   padding: 10px;
   margin: 0%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__prix {
   margin-left: auto;
@@ -490,6 +506,8 @@ a {
 @media screen and (min-width: 760px) {
   body {
     width: 100%;
+    margin: 0%;
+    padding: 0;
   }
 
   .tuto__titre {
@@ -515,7 +533,7 @@ a {
 
   .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .menu__header {
     display: flex;
