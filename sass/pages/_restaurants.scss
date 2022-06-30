@@ -38,6 +38,7 @@
     &__elements {
         padding-left: 10px;
         padding-right: 10px;
+
     }
 
     &__titre {
@@ -128,6 +129,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        width: 215px;
     }
 
     &__plats-noms {
@@ -135,6 +137,8 @@
         padding-top: 10px;
         padding-left: 10px;
         margin: 0%;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__plats-accompagnements {
@@ -150,12 +154,11 @@
         font-weight: bold;
         display: flex;
         align-items: flex-end;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-right: 15px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-
     }
 
     &__box {

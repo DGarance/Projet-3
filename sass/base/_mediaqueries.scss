@@ -37,7 +37,8 @@
 
     .menu{
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
         &__header{
             display: flex;
@@ -46,6 +47,10 @@
         
         &__header-heart{
             margin-left: 3%;
+        }
+
+        &__elements{
+            width: 350px;
         }
     }
 

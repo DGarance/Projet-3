@@ -6,11 +6,11 @@
 @keyframes menu {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }
 @keyframes spin {
@@ -45,7 +45,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 1;
   animation: apparition 6s forwards;
   animation-duration: 7s;
   animation-fill-mode: forwards;
@@ -205,9 +205,9 @@ a {
   box-shadow: 3px 3px 5px #7e7e7e;
 }
 .tuto__step:hover {
-  opacity: 0.8;
+  opacity: 0.3;
   box-shadow: 4px 4px 6px #e6e6e6;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background-color: #FF79DA;
 }
 .tuto__chiffre {
   background-color: #9356DC;
@@ -220,6 +220,11 @@ a {
 .tuto__icon {
   margin-right: 40px;
   color: #7e7e7e;
+}
+.tuto__icon:hover {
+  content: "";
+  opacity: 1;
+  color: #9356DC;
 }
 .tuto__texte {
   font-size: 15px;
@@ -388,6 +393,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 215px;
 }
 .menu__plats-noms {
   font-size: 17px;
@@ -395,6 +401,8 @@ a {
   padding-top: 10px;
   padding-left: 10px;
   margin: 0%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__plats-accompagnements {
   font-size: 14px;
@@ -434,7 +442,7 @@ a {
 .concept__bouton {
   cursor: pointer;
   border: 0;
-  padding: 15px;
+  padding: 20px;
   color: #ffffff;
   border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -447,7 +455,7 @@ a {
 .menu__bouton {
   cursor: pointer;
   border: 0;
-  padding: 15px;
+  padding: 20px;
   color: #ffffff;
   border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -533,7 +541,8 @@ a {
 
   .menu {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .menu__header {
     display: flex;
@@ -541,6 +550,9 @@ a {
   }
   .menu__header-heart {
     margin-left: 3%;
+  }
+  .menu__elements {
+    width: 350px;
   }
 
   .restaurants__titre {

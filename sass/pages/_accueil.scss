@@ -56,9 +56,9 @@
         box-shadow: 3px 3px 5px $gray;
 
         &:hover {
-            opacity: 0.8;
+            opacity: 0.3;
             @include box-shadow;
-            @include gradient-color;
+            background-color: $couleur-secondaire;
         }
     }
 
@@ -69,11 +69,19 @@
         @include border-radius;
         position: absolute;
         left: 10px;
+
+        
     }
 
     &__icon {
         margin-right: 40px;
         color: $gray;
+
+        &:hover {
+            content: '';
+            opacity: 1;
+            color: $couleur-primaire;
+        }
     }
 
     &__texte {
