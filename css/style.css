@@ -205,9 +205,9 @@ a {
   box-shadow: 3px 3px 5px #7e7e7e;
 }
 .tuto__step:hover {
-  opacity: 0.3;
-  box-shadow: 4px 4px 6px #e6e6e6;
-  background-color: #FF79DA;
+  color: #9356DC;
+  cursor: pointer;
+  font-weight: bold;
 }
 .tuto__chiffre {
   background-color: #9356DC;
@@ -222,9 +222,9 @@ a {
   color: #7e7e7e;
 }
 .tuto__icon:hover {
-  content: "";
-  opacity: 1;
   color: #9356DC;
+  cursor: pointer;
+  font-weight: bold;
 }
 .tuto__texte {
   font-size: 15px;
@@ -283,6 +283,7 @@ a {
   justify-content: flex-end;
   bottom: 50px;
   right: 20px;
+  font-size: 25px;
 }
 
 /*Structure pages Restaurants*/
@@ -393,7 +394,6 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 215px;
 }
 .menu__plats-noms {
   font-size: 17px;
@@ -416,7 +416,7 @@ a {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-right: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -442,7 +442,7 @@ a {
 .concept__bouton {
   cursor: pointer;
   border: 0;
-  padding: 20px;
+  padding: 20px 30px 20px 30px;
   color: #ffffff;
   border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -455,7 +455,7 @@ a {
 .menu__bouton {
   cursor: pointer;
   border: 0;
-  padding: 20px;
+  padding: 20px 30px 20px 30px;
   color: #ffffff;
   border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -479,7 +479,7 @@ a {
 .restaurant__coeur::before {
   content: "\f004";
   font-weight: lighter;
-  transition: color 1s ease-out;
+  transition: color 1s linear 2s;
   color: black;
   background-color: transparent;
 }

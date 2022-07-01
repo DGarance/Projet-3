@@ -7,7 +7,7 @@
 @mixin bouton {
     cursor: pointer;
     border: 0;
-    padding: 20px;
+    padding: 20px 30px 20px 30px;
     color: $white;
     border-radius: 100px;
     background: linear-gradient($couleur-secondaire, $couleur-primaire);

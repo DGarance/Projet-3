@@ -2,24 +2,24 @@
 .concept__bouton {
     @include bouton;
 
-    &:hover{
+    &:hover {
         @include box-shadow;
         transform: scale(.95)
     }
 }
 
 .menu__bouton {
-   @include bouton;
+    @include bouton;
     margin-top: 30px;
     margin-bottom: 30px;
 
     &-conteneur {
         @include display;
         align-items: center;
-        
+
     }
 
-    &:hover{
+    &:hover {
         @include box-shadow;
         transform: scale(.95);
     }
@@ -35,9 +35,10 @@
     &__coeur::before {
         content: "\f004";
         font-weight: lighter;
-        transition: color 1s ease-out;
+        transition: color 1s linear 2s;
         color: black;
         background-color: transparent;
+        
     }
 
     &__coeur:hover::before {
@@ -47,7 +48,7 @@
         background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
+        
     }
 }
 

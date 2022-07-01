@@ -41,6 +41,7 @@
 }
 
 .tuto {
+
     &__titre {
         @include titre;
         margin: 20px;
@@ -56,9 +57,9 @@
         box-shadow: 3px 3px 5px $gray;
 
         &:hover {
-            opacity: 0.3;
-            @include box-shadow;
-            background-color: $couleur-secondaire;
+            color: $couleur-primaire;
+            cursor: pointer;
+            font-weight: bold;
         }
     }
 
@@ -70,7 +71,7 @@
         position: absolute;
         left: 10px;
 
-        
+
     }
 
     &__icon {
@@ -78,11 +79,14 @@
         color: $gray;
 
         &:hover {
-            content: '';
-            opacity: 1;
+
             color: $couleur-primaire;
+            cursor: pointer;
+            font-weight: bold;
         }
+
     }
+
 
     &__texte {
         font-size: 15px;
@@ -153,5 +157,6 @@
         justify-content: flex-end;
         bottom: 50px;
         right: 20px;
+        font-size: 25px;
     }
 }
