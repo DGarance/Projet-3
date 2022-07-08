@@ -13,6 +13,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
+
     &-conteneur {
         @include display;
         align-items: center;
@@ -36,7 +37,7 @@
         content: "\f004";
         font-weight: lighter;
         color: black;
-        background-color: transparent;
+
 
     }
 

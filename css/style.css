@@ -235,12 +235,7 @@ a {
   background-color: #f6f6f6;
   box-shadow: 3px 3px 5px #7e7e7e;
 }
-.tuto__step:hover {
-  color: #9356DC;
-  cursor: pointer;
-  font-weight: bold;
-}
-.tuto__step:hover.tuto__icon {
+.tuto__step:hover .tuto__icon {
   color: #9356DC;
   cursor: pointer;
   font-weight: bold;
@@ -256,11 +251,6 @@ a {
 .tuto__icon {
   margin-right: 40px;
   color: #7e7e7e;
-}
-.tuto__icon:hover {
-  color: #9356DC;
-  cursor: pointer;
-  font-weight: bold;
 }
 .tuto__texte {
   font-size: 15px;
@@ -478,7 +468,7 @@ a {
 .concept__bouton {
   cursor: pointer;
   border: 0;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 45px 20px 45px;
   color: #ffffff;
   border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -491,7 +481,7 @@ a {
 .menu__bouton {
   cursor: pointer;
   border: 0;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 45px 20px 45px;
   color: #ffffff;
   border-radius: 100px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -516,7 +506,6 @@ a {
   content: "\f004";
   font-weight: lighter;
   color: black;
-  background-color: transparent;
 }
 .restaurant__coeur:hover::before {
   color: #FF79DA;
