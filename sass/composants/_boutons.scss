@@ -35,10 +35,9 @@
     &__coeur::before {
         content: "\f004";
         font-weight: lighter;
-        transition: color 1s linear 2s;
         color: black;
         background-color: transparent;
-        
+
     }
 
     &__coeur:hover::before {
@@ -48,7 +47,9 @@
         background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
+        animation: remplissage 2s ease-out;
+
+
     }
 }
 
@@ -60,8 +61,8 @@
     &__coeur::before {
         content: "\f004";
         font-weight: lighter;
-        transition: color 1s ease-out;
         color: black;
+
     }
 
     &__coeur:hover::before {
@@ -72,5 +73,6 @@
         background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: remplissage 2s ease-out;
     }
 }

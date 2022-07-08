@@ -62,7 +62,7 @@
         background-color: $white;
         @include border-radius;
         @include box-shadow;
-        animation: menu 0.5s ease-in;
+        animation: menu 1s ease-in;
 
         &:hover .menu__box {
             width: 70px;
@@ -79,7 +79,7 @@
         background-color: $white;
         @include border-radius;
         @include box-shadow;
-        animation: menu 1s ease-in;
+        animation: menu 1.5s ease-in;
 
         &:hover .menu__box {
             width: 70px;
@@ -96,7 +96,7 @@
         background-color: $white;
         @include border-radius;
         @include box-shadow;
-        animation: menu 1.5s ease-in;
+        animation: menu 2s ease-in;
 
         &:hover .menu__box {
             width: 70px;
@@ -153,7 +153,7 @@
         font-weight: bold;
         display: flex;
         align-items: flex-end;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         padding-right: 15px;
         overflow: hidden;
         text-overflow: ellipsis;

@@ -22,10 +22,43 @@
   }
 }
 @keyframes apparition {
-  to {
+  0% {
+    opacity: 1;
+    z-index: 999;
+  }
+  75% {
+    opacity: 1;
+    z-index: 999;
+  }
+  90% {
+    opacity: 0.5;
+    z-index: 999;
+  }
+  100% {
     opacity: 0;
-    transform: translateX(0px);
     z-index: -1;
+  }
+}
+@keyframes remplissage {
+  0% {
+    opacity: 1;
+    transform: scaleX(200px);
+  }
+  25% {
+    opacity: 0.7;
+    transform: scaleX(150px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scaleX(100px);
+  }
+  75% {
+    opacity: 0.9;
+    transform: scaleX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(0px);
   }
 }
 /*Loader*/
@@ -46,9 +79,7 @@
   height: 100%;
   z-index: 1;
   opacity: 1;
-  animation: apparition 6s forwards;
-  animation-duration: 7s;
-  animation-fill-mode: forwards;
+  animation: apparition 3s forwards;
 }
 .loader__titre {
   font-family: "Shrikhand";
@@ -209,6 +240,11 @@ a {
   cursor: pointer;
   font-weight: bold;
 }
+.tuto__step:hover.tuto__icon {
+  color: #9356DC;
+  cursor: pointer;
+  font-weight: bold;
+}
 .tuto__chiffre {
   background-color: #9356DC;
   color: #ffffff;
@@ -340,7 +376,7 @@ a {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
-  animation: menu 0.5s ease-in;
+  animation: menu 1s ease-in;
 }
 .menu__plats1:hover .menu__box {
   width: 70px;
@@ -354,7 +390,7 @@ a {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
-  animation: menu 1s ease-in;
+  animation: menu 1.5s ease-in;
 }
 .menu__plats2:hover .menu__box {
   width: 70px;
@@ -368,7 +404,7 @@ a {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
-  animation: menu 1.5s ease-in;
+  animation: menu 2s ease-in;
 }
 .menu__plats3:hover .menu__box {
   width: 70px;
@@ -416,7 +452,7 @@ a {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding-right: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -479,7 +515,6 @@ a {
 .restaurant__coeur::before {
   content: "\f004";
   font-weight: lighter;
-  transition: color 1s linear 2s;
   color: black;
   background-color: transparent;
 }
@@ -490,6 +525,7 @@ a {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: remplissage 2s ease-out;
 }
 
 .menu__coeur {
@@ -498,7 +534,6 @@ a {
 .menu__coeur::before {
   content: "\f004";
   font-weight: lighter;
-  transition: color 1s ease-out;
   color: black;
 }
 .menu__coeur:hover::before {
@@ -509,6 +544,7 @@ a {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: remplissage 2s ease-out;
 }
 
 @media screen and (min-width: 760px) {

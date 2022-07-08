@@ -60,6 +60,12 @@
             color: $couleur-primaire;
             cursor: pointer;
             font-weight: bold;
+
+            &.tuto__icon{
+                color: $couleur-primaire;
+                cursor: pointer;
+                font-weight: bold;
+            }
         }
     }
 
