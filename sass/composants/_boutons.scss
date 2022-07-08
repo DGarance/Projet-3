@@ -42,7 +42,7 @@
     }
 
     &__coeur:hover::before {
-        color: $couleur-secondaire;
+        color: $white;
         cursor: pointer;
         font-weight: bold;
         background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
