@@ -1,0 +1,79 @@
+/*Boutons*/
+.concept__bouton {
+    @include bouton;
+
+    &:hover {
+        @include box-shadow;
+        transform: scale(.95)
+    }
+}
+
+.menu__bouton {
+    @include bouton;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+    &-conteneur {
+        @include display;
+        align-items: center;
+
+    }
+
+    &:hover {
+        @include box-shadow;
+        transform: scale(.95);
+    }
+}
+
+/*Bouton like*/
+.restaurant {
+
+    &__coeur {
+        background-color: $white;
+    }
+
+    &__coeur::before {
+        content: "\f004";
+        font-weight: lighter;
+        color: black;
+
+
+    }
+
+    &__coeur:hover::before {
+        color: $couleur-secondaire;
+        cursor: pointer;
+        font-weight: bold;
+        background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: remplissage 2s ease-out;
+
+
+    }
+}
+
+.menu {
+    &__coeur {
+        background-color: $wild-sand;
+    }
+
+    &__coeur::before {
+        content: "\f004";
+        font-weight: lighter;
+        color: black;
+
+    }
+
+    &__coeur:hover::before {
+        color: $couleur-secondaire;
+        cursor: pointer;
+        background: $wild-sand;
+        font-weight: bold;
+        background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: remplissage 2s ease-out;
+    }
+}

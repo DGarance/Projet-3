@@ -1,0 +1,42 @@
+@mixin border-radius {
+    border-radius: 20px;
+}
+@mixin gradient-color{
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+}
+@mixin bouton {
+    cursor: pointer;
+    border: 0;
+    padding: 20px 45px 20px 45px;
+    color: $white;
+    border-radius: 100px;
+    background: linear-gradient($couleur-secondaire, $couleur-primaire);
+}
+
+@mixin background-color {
+    background-color: $mine-shaft;
+}
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin titre {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@mixin box-shadow {
+    box-shadow: 4px 4px 6px #e6e6e6
+}
+
+@mixin sous-titre {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@mixin texte {
+    font-size: 14px;
+}
+

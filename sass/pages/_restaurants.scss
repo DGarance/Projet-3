@@ -1,0 +1,180 @@
+/*Structure pages Restaurants*/
+
+/*Image*/
+.img__restaurants {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Menu*/
+.menu {
+    &__conteneur {
+        background-color: $wild-sand;
+        border-radius: 30px;
+        position: relative;
+        margin-top: -30px;
+    }
+
+
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__header-titre {
+        @include titre;
+        font-family: 'Shrikhand', sans-serif;
+    }
+
+    &__header-heart {
+        @include titre;
+    }
+
+    &__elements {
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    &__titre {
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 10%;
+            height: 4px;
+            left: 0%;
+            top: 22px;
+            position: absolute;
+            background-color: $couleur-tertiaire;
+        }
+    }
+
+    &__plats1 {
+        margin-top: 10px;
+        display: flex;
+        background-color: $white;
+        @include border-radius;
+        @include box-shadow;
+        animation: menu 1s ease-in;
+
+        &:hover .menu__box {
+            width: 70px;
+        }
+
+        &:hover .menu__box>.fa-circle-check {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__plats2 {
+        margin-top: 10px;
+        display: flex;
+        background-color: $white;
+        @include border-radius;
+        @include box-shadow;
+        animation: menu 1.5s ease-in;
+
+        &:hover .menu__box {
+            width: 70px;
+        }
+
+        &:hover .menu__box>.fa-circle-check {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__plats3 {
+        margin-top: 10px;
+        display: flex;
+        background-color: $white;
+        @include border-radius;
+        @include box-shadow;
+        animation: menu 2s ease-in;
+
+        &:hover .menu__box {
+            width: 70px;
+        }
+
+        &:hover .menu__box>.fa-circle-check {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__plats4 {
+        margin-top: 10px;
+        display: flex;
+        background-color: $white;
+
+        @include border-radius;
+        @include box-shadow;
+        animation: menu 2s ease-in;
+
+        &:hover .menu__box {
+            width: 70px;
+        }
+
+        &:hover .menu__box>.fa-circle-check {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__plats-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__plats-noms {
+        @include sous-titre;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin: 0%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__plats-accompagnements {
+        @include texte;
+        padding: 10px;
+        margin: 0%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__prix {
+        margin-left: auto;
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 8px;
+        padding-right: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__box {
+        background-color: $couleur-tertiaire;
+        @include display;
+        align-items: center;
+        width: 0;
+        border-radius: 0 20px 20px 0;
+        overflow: hidden;
+        transition: width 1s;
+
+        .fa-circle-check {
+            color: $white;
+            transform: rotate(360deg);
+            transition: transform 500ms;
+        }
+    }
+
+
+}

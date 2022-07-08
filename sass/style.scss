@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
+@import "utils/_mixins.scss";
+@import "utils/_variables.scss";
+@import "utils/_animations.scss";
+@import "layouts/_base_pages.scss";
+@import "pages/_accueil.scss";
+@import "pages/_restaurants.scss";
+@import "composants/_boutons.scss";
+@import "base/_mediaqueries.scss";
