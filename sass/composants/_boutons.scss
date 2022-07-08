@@ -56,24 +56,16 @@
 
 .menu {
     &__coeur {
-        background-color: $wild-sand;
-    }
-
-    &__coeur::before {
-        content: "\f004";
-        font-weight: lighter;
-        color: black;
-
-    }
-
-    &__coeur:hover::before {
-        color: $couleur-secondaire;
-        cursor: pointer;
-        background: $wild-sand;
-        font-weight: bold;
-        background: -webkit-linear-gradient($couleur-primaire, $couleur-secondaire);
+        opacity: 0;
+        background: linear-gradient($couleur-primaire, $couleur-secondaire);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: remplissage 2s ease-out;
+        transition: opacity 2s;
+    }
+
+
+    &__coeur:hover {
+        cursor: pointer;
+        opacity: 1;
     }
 }

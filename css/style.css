@@ -518,22 +518,15 @@ a {
 }
 
 .menu__coeur {
-  background-color: #f6f6f6;
-}
-.menu__coeur::before {
-  content: "\f004";
-  font-weight: lighter;
-  color: black;
-}
-.menu__coeur:hover::before {
-  color: #FF79DA;
-  cursor: pointer;
-  background: #f6f6f6;
-  font-weight: bold;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: remplissage 2s ease-out;
+  transition: opacity 2s;
+}
+.menu__coeur:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 @media screen and (min-width: 760px) {
