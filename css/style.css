@@ -340,7 +340,7 @@ a {
 }
 .menu__coeur2 {
   position: relative;
-  display: flex;
+  display: flex !important;
 }
 .menu__titre {
   text-transform: uppercase;
