@@ -57,8 +57,9 @@
         box-shadow: 3px 3px 5px $gray;
 
         &:hover {
+            background-color: $couleur-hover;
 
-            & .tuto__icon{
+            & .tuto__icon {
                 color: $couleur-primaire;
                 cursor: pointer;
                 font-weight: bold;
@@ -153,5 +154,14 @@
         bottom: 50px;
         right: 20px;
         font-size: 25px;
+    }
+
+    &__coeur1 {
+        position: absolute;
+    }
+
+    &__coeur2 {
+        position: relative;
+        display: flex;
     }
 }

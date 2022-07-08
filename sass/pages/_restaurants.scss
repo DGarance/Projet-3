@@ -41,6 +41,15 @@
 
     }
 
+    &__coeur1 {
+        position: absolute;
+    }
+
+    &__coeur2 {
+        position: relative;
+        display: flex;
+    }
+
     &__titre {
         text-transform: uppercase;
         position: relative;
