@@ -3,7 +3,8 @@
     @include bouton;
 
     &:hover {
-        @include box-shadow;
+        @include box-shadow ;
+        opacity: 0.85;
         transform: scale(.95)
     }
 }
@@ -22,6 +23,7 @@
 
     &:hover {
         @include box-shadow;
+        opacity: 0.85;
         transform: scale(.95);
     }
 }

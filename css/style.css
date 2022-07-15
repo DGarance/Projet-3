@@ -360,7 +360,7 @@ a {
   display: flex;
   background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 6px 6px 4px #aaa6a6;
   animation: menu 1s ease-in;
 }
 .menu__plats1:hover .menu__box {
@@ -374,7 +374,7 @@ a {
   display: flex;
   background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 6px 6px 4px #aaa6a6;
   animation: menu 1.5s ease-in;
 }
 .menu__plats2:hover .menu__box {
@@ -388,7 +388,7 @@ a {
   display: flex;
   background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 6px 6px 4px #aaa6a6;
   animation: menu 2s ease-in;
 }
 .menu__plats3:hover .menu__box {
@@ -402,7 +402,7 @@ a {
   display: flex;
   background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 6px 6px 4px #aaa6a6;
   animation: menu 2s ease-in;
 }
 .menu__plats4:hover .menu__box {
@@ -469,7 +469,8 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
 }
 .concept__bouton:hover {
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 6px 6px 4px #aaa6a6;
+  opacity: 0.85;
   transform: scale(0.95);
 }
 
@@ -489,7 +490,8 @@ a {
   align-items: center;
 }
 .menu__bouton:hover {
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 6px 6px 4px #aaa6a6;
+  opacity: 0.85;
   transform: scale(0.95);
 }
 
