@@ -1,4 +1,14 @@
-# Projet Dynamisez une page web avec des animations CSS :sparkles:
+# Projet n°3 |  Parcours Développeur Web | OpenClassrooms
+
+## OHMYFOOD | Dynamisez une page web avec des animations CSS :sparkles:
+
+## Technologies utilisées
+📄 HTML
+🎨 CSS
+
+## Contexte
+
+Ce projet a été réalisé dans le cadre de ma formation de développeuse web chez OpenClassrooms. L'objectif était de développer un site "mobile first" répertoriant les menus de restaurants gastronomiques pour la startup Ohmyfood, qui souhaite s'imposer sur le marché de la restauration à Paris.
 
 ## Résumé du scénario
 
@@ -11,10 +21,6 @@ L’équipe commerciale a déjà réussi à convaincre 4 restaurateurs d’utili
 À deux, vous avez pu établir ce brief créatif pour rassembler toutes les informations clés du projet de développement du site.
 
 Le projet va pouvoir commencer. Paul vous envoie les maquettes par e-mail...
-
-## Contexte
-
-Ce projet a été réalisé dans le cadre de ma formation de développeuse web chez OpenClassrooms. L'objectif était de développer un site "mobile first" répertoriant les menus de restaurants gastronomiques pour la startup Ohmyfood, qui souhaite s'imposer sur le marché de la restauration à Paris.
 
 ## Contenu du projet
 
